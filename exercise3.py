@@ -14,3 +14,8 @@ movies = [
 
 ]
 
+movies.sort(key=lambda movie: movie[1], reverse=True)
+
+print("Newest to Oldest")
+for m in movies:
+    print(f"{m[0]} - {m[1]}")
